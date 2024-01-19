@@ -1,0 +1,218 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: rgb(238,166,166);
+            background: linear-gradient(253deg, rgba(238,166,166,1) 44%, rgba(241,179,159,1) 56%, rgba(243,191,153,1) 70%, rgba(250,224,136,1) 100%, rgba(255,249,123,1) 100%);
+        }
+
+        .sankarnavbar {
+            background-color: #ff6f6f;
+            overflow: hidden;
+            padding-left: 150px;
+            
+        }
+        .sankarnavbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .sankarnavbar a:hover {
+            
+            color: black;
+
+        }
+
+        .sankarnavbar .icon {
+            display: none;
+            
+        }
+
+        @media screen and (max-width: 600px) {
+            .sankarnavbar a:not(:first-child) {display: none;}
+            .sankarnavbar a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .sankarnavbar.responsive a.icon {
+                position: block;
+                top: 0;
+                right: 0;
+            }
+            .sankarnavbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .sankarnavbar.responsive {
+            position: relative;
+        }
+
+        .sankarnavbar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .sankarnavbar.responsive a {
+            display: block;
+            text-align: left;
+        }
+
+        .content {
+            display: flex;
+            
+        }
+
+        .sankartext-section {
+            flex: 1;
+            padding: 40px;
+        }
+        .sankartext-section h2{
+            padding-top: 80px;
+          font-weight: 900;
+          font-size:40px;
+          letter-spacing: 5px;
+        }
+        .sankartext-section p{
+         padding: 25px 25px 25px 0px;
+          font-weight:300;
+          font-size:18px;
+          letter-spacing: 1px;
+        }
+        .sankartext-section button{
+         padding:20px 70px;
+         border-radius: 10px;
+          font-weight:300;
+          font-size:12px;
+          letter-spacing: 1px;
+          border: none;
+          background-color: #ff6767;
+        }
+
+
+        .sankarimage-section {
+            flex: 1;
+        }
+
+        .sankarimage-section img {
+            max-width: 100%;
+            height: 600px;
+            display: block;
+        }
+        @media screen and (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .sankartext-section,
+            .sankarimage-section {
+                padding: 20px 0;
+            }
+        }
+        .containers {
+            display: flex;
+            flex-wrap: wrap;
+          
+            max-width: 1000px;
+            margin: 100px 50px 50px 100px;
+            overflow: hidden;
+        }
+
+        .sankarimage-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 500px;
+            overflow: hidden;
+        }
+
+        .sankarimage-box img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            display: block;
+            aspect-ratio:2/3;
+        }
+
+        .sankarimage-box .first-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100%;
+        }
+
+        .sankarimage-box .first-column img {
+            flex: 1;
+            aspect-ratio: 6/2;
+        }
+
+        .sankarimage-box .second-column img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sankarimage-box .third-image {
+            grid-column: span 2;
+        }
+
+        .details {
+            margin: 100px 0px 250px 30px;
+            max-width: 400px;
+            padding: 10px 20px;
+            background-color: #ff6767;
+            gap: 30px;
+        }
+
+        .details p {
+            margin-bottom: 10px;
+            max-width: 250px;
+        }
+
+        .details h2 {
+            letter-spacing: 5px;
+            font-size: 35px;
+        }
+
+        .details img {
+            width: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                margin: 50px;
+                
+            }
+
+            .sankarimage-box {
+                max-width: 120%;
+            }
+
+            .details {
+                margin-top: 20px;
+                max-width: 200px;
+            }
+        }
+        .click{
+            
+            display: flex;
+        }
+        .click img{
+            
+            margin-left: 10px;
+        }
+   
